@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,
+    initial-scale=1">
+  <title>JavaScript Hotell</title>
+  <link rel="stylesheet" href="grid.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  img {
+  display: block;
+  margin-left: 41%;
+  margin-right: 50%;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: white;
+  }
+
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <img id="logo" src="logojh.png" alt="JavaScript Hotell Logga">
+
+  </header>
+
+  <nav class="topnav" id="mytopnav">
+    <a href="index.html">Start</a>
+    <a href="boka.html" >Boka</a>
+    <a href="restaurang.html" class="active">Restaurang</a>
+    <a href="hitta.html">Hitta</a>
+    <a href="kontakta.html">Kontakta</a>
+    <a href="javascript:void(0);" style="font-size:15px;"
+       class="icon" onclick="myFunction()">&#9776;</a>
+
+</nav>
+
+<section>
+  <div class="container">
+    <form action="/action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="namn">Fullständigt namn</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="namn" name="firstname" placeholder="Ditt namn...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="tel">Telefon</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="tel" name="lastname" placeholder="Ditt nummer...">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="allergi">Allergier</label>
+        </div>
+        <div class="col-75">
+          <select id="allergi" name="country">
+            <option value="tre">Ingen</option>
+            <option value="två">Gluten</option>
+            <option value="tre">Lactos</option>
+            <option value="fyra">Annan allergi, skriv i informations rutan</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="Antal">Antal personer</label>
+        </div>
+        <div class="col-75">
+          <select id="Antal" name="country">
+            <option value="två">2-stycken</option>
+            <option value="tre">3-stycken</option>
+            <option value="fyra">4-stycken</option>
+            <option value="fem">5-stycken</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="info">Övrig information</label>
+        </div>
+        <div class="col-75">
+          <textarea id="info" name="subject" placeholder="Tex allergier, barnmat mm..." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</section>
+
+<aside>
+
+    <h2>Meny</h2>
+  <table>
+    <tr>
+      <th>Veckodag</th>
+      <th>Rätt</th>
+    </tr>
+    <tr>
+      <td>Måndag</td>
+      <td>Bakad fläsksida med cidersky och rostade rotfrukter.</td>
+    </tr>
+    <tr>
+      <td>Tisdag</td>
+      <td>Ugnsbakat kycklingbröst med ramslökspesto,rostade potatisar.</td>
+    </tr>
+    <tr>
+      <td>Onsdag</td>
+      <td>Kalvfärsbiffar med timjan, bakade betor och örtkräm.</td>
+    </tr>
+    <tr>
+      <td>Torsdag</td>
+      <td>Vitvinsbrässerad högrev med dragon och skogschampinjoner.</td>
+    </tr>
+    <tr>
+      <td>Fredag</td>
+      <td>Grillat vårlamm med örter, citron-timjanssky och gröna bönor.</td>
+    </tr>
+    <tr>
+      <td>Lör & Sön</td>
+      <td>På helgen ska det självklart njutas lite extra, av så väl mat som dryck.
+      Varje lördag och söndag serverar vi därför nu vår härliga Weekend Lunch för 299kr/person.</td>
+    </tr>
+    <tr>
+      <td>Veckans veg</td>
+      <td>Rostad palsternacka med pocherat ägg och beurre blanc.</td>
+    </tr>
+  </table>
+</aside>
+<footer>
+  <p> JavaScript Hotell/ Föreningsgatan 41 / 211 50 Malmö / 0709100680</p>
+  <a href="mailto:testadress@gmail.com">Epost </a>
+</footer>
+<script src="script-nav.js"></script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+
+</html>

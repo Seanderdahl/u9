@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,
+    initial-scale=1">
+  <title>JavaScript Hotell</title>
+  <link rel="stylesheet" href="grid.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+img#logo {
+  display: block;
+  margin-left: 41%;
+  margin-right: 50%;
+}
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <header>
+
+    <img id="logo" src="logojh.png" alt="JavaScript Hotell Logga">
+
+  </header>
+
+  <nav class="topnav" id="mytopnav">
+    <a href="index.html" class="active">Start</a>
+    <a href="boka.html">Boka</a>
+    <a href="restaurang.html">Restaurang</a>
+    <a href="hitta.html">Hitta</a>
+    <a href="kontakta.html">Kontakta</a>
+    <a href="javascript:void(0);" style="font-size:15px;"
+       class="icon" onclick="myFunction()">&#9776;</a>
+
+  </nav>
+  <section>
+    <article>
+      <h1>Välkommen till JavaScript Hotell</h1>
+      <p>
+
+      </p>
+      <h2>Vad erbjuder vi?</h2>
+      <p>
+        På JavaScript Hotell kan ni både koppla av med en härlig Spa-vistelse, hotell-vistelse eller unna dig en måltid.
+        Ta några dagar ledigt för att spendera tid tillsammans, välkommen till JavaScript Hotell. Här  får du en upplevelse i en unik miljö där stad och ett unikt hotell möts.
+        Med sitt unika läge erbjuder hotellet mycket goda kommunikationer och det går precis lika bra att ta bilen som att åka kollektivt.
+      </p>
+      <h3>Vägbeskrivning</h3>
+      <p>
+        Att samla människor från när och fjärran ställer specifika krav på tillgänglighet och kommunikationer.
+        Här börjar också fördelarna för JavaScript Spa Hotell som konferens- och kongressplats.
+        Endast 15 minuter från Malmö centralstation – gör det enkelt och smidigt att komma till JavaScript Hotell.
+      </p>
+      <p>
+        <a href="https://pauliskolan.malmo.se/" target="_blank">Länk till pauli</a>
+      </p>
+
+    </article>
+  </section>
+  <aside>
+
+    <img class="bild" src="spahotell.jpeg" alt="spabild">
+
+  </aside>
+  <footer>
+<p> JavaScript Hotell/ Föreningsgatan 41 / 211 50 Malmö / 0709100680 </p>
+<a href="mailto:testadress@gmail.com">Epost </a>
+  </footer>
+  <script src="script-nav.js"></script>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+</body>
+</html>

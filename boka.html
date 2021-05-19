@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,
+    initial-scale=1">
+  <title>JavaScript Hotell</title>
+  <link rel="stylesheet" href="grid.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+
+  img {
+  display: block;
+  margin-left: 41%;
+  margin-right: 50%;
+  }
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <header>
+
+    <img id="logo" src="logojh.png" alt="JavaScript Hotell Logga">
+
+
+  </header>
+
+  <nav class="topnav" id="mytopnav">
+    <a href="index.html">Start</a>
+    <a href="boka.html" class="active">Boka</a>
+    <a href="restaurang.html">Restaurang</a>
+    <a href="hitta.html">Hitta</a>
+    <a href="kontakta.html">Kontakta</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+  </nav>
+
+  <section>
+    <div class="container">
+      <form action="/action_page.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="namn">Fullständigt namn</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="namn" name="firstname" placeholder="Ditt namn...">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="tel">Telefon</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="tel" name="lastname" placeholder="Ditt nummer...">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="rum">Rumstyp</label>
+          </div>
+          <div class="col-75">
+            <select id="rum" name="country">
+              <option value="två">2-stycken</option>
+              <option value="tre">3-stycken</option>
+              <option value="fyra">4-stycken</option>
+              <option value="fem">5-stycken</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="info">Övrig information</label>
+          </div>
+          <div class="col-75">
+            <textarea id="info" name="subject" placeholder="Friviligt.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <aside>
+  <img class="kvinna2" src="kvinna.jpeg" alt="glad_kvinna">
+  </aside>
+  <footer>
+    <p> JavaScript Hotell/ Föreningsgatan 41 / 211 50 Malmö / 0709100680</p>
+    <a href="mailto:testadress@gmail.com">Epost </a>
+  </footer>
+  <script src="script-nav.js"></script>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+</body>
+
+</html>
